@@ -97,7 +97,7 @@ rmlist <- list("Subject.0", "Subject.1", "MeasureColNames")
 rm("keepColumns", list = rmlist)
 gc()
 
-
+write.table(HAR_tidy.df, "HAR_tidy.txt", row.names=FALSE)
 return(HAR_tidy.df)
 
 
